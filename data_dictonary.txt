@@ -4,19 +4,23 @@ Comma-delimited file
 
 Fields:
 
-subjects
-  Numeric identifier of the subject wearing the device             
-activity.label 
-  Descriptive label of the activity the subject was performing when the measurement was taken       
+subjects - Numeric identifier of the subject wearing the device             
+activity.label - Descriptive label of the activity the subject was performing when the measurement was taken       
 
-The following fields are all mean and standard deviations of the measurements from the devices
-tBodyAcc.mean.X
+The following fields are measurements from the devices
+ - The letters X, Y, and Z represent the axis of the plane on which the measurement was taken.
+ - Measurements will be either mean() or std()  (standard deviation).
+ - Body Acceleration measurements subtract gravity from total acceleration.  Total acceleration is measured in standard gravity units "g".
+ - Gravity Acceleration measurements are in standard gravity units "g".
+ - Gyroscope Measurements show the angular velocity vector in radians/second.
+
+tBodyAcc.mean.X 
 tBodyAcc.mean.Y
 tBodyAcc.mean.Z
 tBodyAcc.std.X
 tBodyAcc.std.Y
 tBodyAcc.std.Z
-tGravityAcc.mean.X
+tGravityAcc.mean.X  
 tGravityAcc.mean.Y
 tGravityAcc.mean.Z
 tGravityAcc.std.X
