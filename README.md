@@ -12,8 +12,11 @@ The function written to process the data is: run_analysis.
 
 The code reads in 6 source files containing the data regarding participants, activities and the data generated from the devices.  The source data is also separated between testing and training data; these data sets are all combined to create one final tidy data set.
 
-The data is read into the function.  Labels are added to the column headings for the measurements.  Subject and activity data are merged with the measurements.  The measurements for standard deviation and means are pulled out and averaged.
-The data set with the averaged values for the standard deviations and mean measurements is the one finally passed back to the caller of the function.
+- The data is read into the function.  
+- Labels are added to the column headings for the measurements. Label names have been cleansed to remove parentheses and dashes.   
+- Subject and activity data are merged with the measurements.  
+- The measurements for standard deviation and means are pulled out and averaged.
+- The data set with the averaged values for the standard deviations and mean measurements is the one finally passed back to the caller of the function.
 
 Source Files
 ============
